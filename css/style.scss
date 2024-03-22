@@ -41,7 +41,6 @@
 }
 
 
-
 *,
 ::before,
 ::after {
@@ -80,13 +79,15 @@ html,body {
     font-size: var(--basic-size);
 }
 
+/* ------🚗 header 🚗------ */
 .header {
     width: 100%;
     height: 80px;
-    background-color: #2F4B92;
-/*     position: fixed;
+    background-color: #2f4b9283;
+    position: fixed;
     top: 0;
-    left: 0; */
+    left: 0;
+    z-index: 999;
     .inner {
         width: 1280px;
         height: 100%;
@@ -94,7 +95,6 @@ html,body {
         display: flex;
         justify-content: start;
         align-items: center;
-
         a {
             width: 80px;
             img {
@@ -110,17 +110,20 @@ html,body {
             }
         }
     }
-}/*  .header end */
+}
 
-.pofol {
-    width: 100%;
+/* ------🚗 main 🚗------ */
+.main {
+    width: 100%;    
     margin: 0 auto;
     background-color: #2F4B92;
-    .main {
-        width: 1280px;
-        max-height: 1024px;
+    .title {
+        max-width: 1280px;
+        width: calc(100% - 30px);
+        /* height: 100vh; */
+        max-height: 900px;
         margin: 0 auto;
-        padding: 250px 0;
+        padding: 300px 0;
         &--item {
             position: relative;
             text-align: center;
@@ -156,7 +159,7 @@ html,body {
         h1 {
             font-size: 9rem;
             color: #fff;
-            
+            padding: 10px 0 0;
             text-align: center;
         }
         p {
@@ -164,6 +167,458 @@ html,body {
             padding: 20px 0;
             font-size: 25px;
         }
-        
     }
+    .profile {
+        max-width: 1280px;
+        width: calc(100% - 30px);
+        max-height: 900px;
+        margin: 240px auto 150px;
+        display: flex;
+/*         padding: 240px 0; */
+        &--hr {
+            width: 48%;
+            max-height: 643px;
+            margin: 0 auto;
+            figure {
+                width: 315px;
+                height: 430px;
+                border-radius: 50px;
+                overflow: hidden;
+                margin: 0 auto;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            &--text {
+                width: 48%;
+                text-align: center; 
+                margin: 0 auto;               
+                h3 {
+                    width: 265px;
+                    height: 50px;
+                    text-align: center;
+                    line-height: 50px;
+                    font-size: 25px;
+                    color: #BDFF00;
+                    border: 1px solid #BDFF00;
+                    border-radius: 50px;
+                    margin-bottom: 20px;
+                    margin: 50px auto 15px;                    
+                }
+                p {
+                    color: #fff;
+                    font-size: 20px;
+                    padding-bottom: 10px;
+                }
+            }
+        }
+        &--info {
+            width: 48%;
+            max-height: 643px;
+            &--one {
+                margin-bottom: 50px;
+                h3 {
+                    width: 265px;
+                    height: 50px;
+                    text-align: center;
+                    line-height: 50px;
+                    font-size: 25px;
+                    color: #BDFF00;
+                    border: 1px solid #BDFF00;
+                    border-radius: 50px;
+                }
+                p {
+                    color: #fff;
+                    font-size: 20px;
+                    padding: 30px 20px 0;
+                }
+            }
+            &--tool {
+                h3 {
+                    width: 120px;
+                    height: 50px;
+                    text-align: center;
+                    line-height: 50px;
+                    font-size: 25px;
+                    color: #BDFF00;
+                    border: 1px solid #BDFF00;
+                    border-radius: 50px;
+                    margin-bottom: 20px;
+                }
+                &--icon {                    
+                    display: flex;                    
+                    figure {
+                        height: 60px;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                }
+            }            
+        }        
+    }
+    .web {        
+        width: 100%;
+        margin: 0 auto;
+        .web1 {
+            &--list {
+                background: url(../img/지니뮤직배경.png) center center / cover no-repeat;
+                background-color: #E2F3FF;
+                margin: 0 auto;
+                &--item {
+                    width: 1280px;
+                    height: 900px;
+                    margin: 0 auto;
+                    padding: 170px 0;   
+                    display: flex;    
+                    &--pcmock {
+                        figure {
+                            height: 650px;
+                            padding-top: 30px;
+                            img {
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                            }
+                        }
+                    }
+                    &--mobilemock {
+                        background: url(../img/지니뮤직모바일화면.png) no-repeat;
+                        background-size: 150px, 320px;
+                        width: 194px;
+                        height: 320px;
+                        position: absolute;
+                        transform: translate(500px, 250px);
+                        z-index: 9;
+                        position: absolute;
+                        overflow: hidden;
+                        
+                    }
+                    &--text {
+                        padding: 50px 0 0 150px;
+                        position: relative;
+                        &--title{
+                            display: flex;
+                            align-items: center;                    
+                            &::before {
+                                content: '';
+                                background-color: #75C5FF;
+                                width: 50px;
+                                height: 50px;
+                                border-radius: 50px;
+                                position: absolute;
+                                top: 30px;
+                                left: 120px;
+                            }
+                            h2 {
+                                font-size: 40px;
+                                margin-right: 40px;
+                                font-weight: 600;
+                                z-index: 9;
+                            }
+                            P {
+                               font-size: 30px; 
+                            }
+                        }
+        
+                        &--info {             
+                            padding: 65px 0 40px;
+                            li {
+                                font-size: 30px;
+                                display: flex;
+                                margin-bottom: 30px;
+                                p {
+                                    width: 120px;
+                                    font-weight: 600;
+                                    margin-right: 60px;
+                                }
+                            }
+                        }
+                        &--btn {               
+                            display: flex;                         
+                            a {
+                                width: 180px;
+                                height: 50px;
+                                background-color: #fff;
+                                border:1px solid #333;
+                                border-radius: 15px;
+                                text-align: center;
+                                line-height: 50px;
+                                display: block;
+                                margin-right: 20px;
+                                font-size: 22px;
+                                font-weight: 500;
+                                
+                            }
+                        }
+                        
+        
+                    }
+                }
+                
+            }
+        }
+        .web2 {
+            &--list {
+                background: url(../img/하림펫푸드배경.png) center center / cover no-repeat;
+                background-color: #E2F3FF;
+                margin: 0 auto;
+                &--item {
+                    width: 1280px;
+                    height: 900px;
+                    margin: 0 auto;
+                    padding: 170px 0;   
+                    display: flex;     
+                    figure {
+                        height: 650px;
+                        padding-top: 30px;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                    &--text {
+                        padding: 50px 0 0 150px;
+                        position: relative;
+                        &--title{
+                            display: flex;
+                            align-items: center;                    
+                            &::before {
+                                content: '';
+                                background-color: #FFB6B6;
+                                width: 50px;
+                                height: 50px;
+                                border-radius: 50px;
+                                position: absolute;
+                                top: 30px;
+                                left: 120px;
+                            }
+                            h2 {
+                                font-size: 40px;
+                                margin-right: 40px;
+                                font-weight: 600;
+                                z-index: 9;
+                            }
+                            P {
+                               font-size: 30px; 
+                            }
+                        }
+        
+                        &--info {             
+                            padding: 65px 0 40px;
+                            li {
+                                font-size: 30px;
+                                display: flex;
+                                margin-bottom: 30px;
+                                p {
+                                    width: 120px;
+                                    font-weight: 600;
+                                    margin-right: 60px;
+                                }
+                            }
+                        }
+                        &--btn {               
+                            display: flex;                         
+                            a {
+                                width: 180px;
+                                height: 50px;
+                                background-color: #fff;
+                                border:1px solid #333;
+                                border-radius: 15px;
+                                text-align: center;
+                                line-height: 50px;
+                                display: block;
+                                margin-right: 20px;
+                                font-size: 22px;
+                                font-weight: 500;
+                                
+                            }
+                        }
+                        
+        
+                    }
+                }
+                
+            }
+        }
+        .web3 {
+            &--list {
+                background: url(../img/독도전시관배경.png) center center / cover no-repeat;
+                background-color: #E2F3FF;
+                margin: 0 auto;
+                color: #fff;
+                &--item {
+                    width: 1280px;
+                    height: 900px;
+                    margin: 0 auto;
+                    padding: 170px 0;   
+                    display: flex;     
+                    figure {
+                        height: 650px;
+                        padding-top: 30px;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                    &--text {
+                        padding: 50px 0 0 150px;
+                        position: relative;
+                        &--title{
+                            display: flex;
+                            align-items: center;                                               
+                            &::before {
+                                content: '';
+                                background-color: #6AA1F4;
+                                width: 50px;
+                                height: 50px;
+                                border-radius: 50px;
+                                position: absolute;
+                                top: 30px;
+                                left: 120px;
+                            }
+                            h2 {
+                                font-size: 40px;
+                                margin-right: 40px;
+                                font-weight: 500;
+                                z-index: 9;
+                            }
+                            P {
+                               font-size: 30px; 
+                            }
+                        }
+        
+                        &--info {             
+                            padding: 65px 0 40px;
+                            li {
+                                font-size: 30px;
+                                display: flex;
+                                margin-bottom: 30px;
+                                p {
+                                    width: 120px;
+                                    font-weight: 500;
+                                    margin-right: 60px;
+                                }
+                            }
+                        }
+                        &--btn {               
+                            display: flex;                         
+                            a {
+                                width: 180px;
+                                height: 50px;
+                                background-color: #fff;
+                                border:1px solid #333;
+                                border-radius: 15px;
+                                text-align: center;
+                                line-height: 50px;
+                                display: block;
+                                margin-right: 20px;
+                                font-size: 22px;
+                                font-weight: 500;
+                                color: #333;                                
+                            }
+                        }
+                        
+        
+                    }
+                }
+                
+            }
+        }
+
+    }
+    .mobile {        
+        width: 100%;
+        margin: 0 auto;
+        .mobile1 {
+            background: url(../img/진에어배경2.png) center center / cover no-repeat;
+            background-color: #E2F3FF;
+            margin: 0 auto;                
+            &--item {
+                width: 1280px;
+                height: 900px;
+                margin: 0 auto;
+                padding: 170px 0;   
+                display: flex;  
+                justify-content: space-between;   
+                figure {
+                    height: 650px;
+                    padding-top: 30px;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+                &--text {
+                    padding-top: 50px;
+                    position: relative;
+                    &--title{
+                        display: flex;
+                        align-items: center;                    
+                        &::before {
+                            content: '';
+                            background-color: #DEEF0F;
+                            width: 50px;
+                            height: 50px;
+                            border-radius: 50px;
+                            position: absolute;
+                            top: 30px;
+                            left: -30px;
+                        }
+                        h2 {
+                            font-size: 40px;
+                            margin-right: 40px;
+                            font-weight: 600;
+                            z-index: 9;
+                        }
+                        P {
+                           font-size: 30px; 
+                        }
+                    }
+        
+                    &--info {             
+                        padding: 65px 0 40px;
+                        li {
+                            font-size: 30px;
+                            display: flex;
+                            margin-bottom: 30px;
+                            p {
+                                width: 120px;
+                                font-weight: 600;
+                                margin-right: 60px;
+                            }
+                        }
+                    }
+                    &--btn {               
+                        display: flex;                         
+                        a {
+                            width: 180px;
+                            height: 50px;
+                            background-color: #fff;
+                            border:1px solid #333;
+                            border-radius: 15px;
+                            text-align: center;
+                            line-height: 50px;
+                            display: block;                                margin-right: 20px;
+                            font-size: 22px;
+                            font-weight: 500;                            
+                        }
+                    }
+                }
+            }
+            .mockup {
+                display: flex;
+                figure {
+                    height: 564px;
+                }
+            }
+        }
+    }    
 }

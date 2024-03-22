@@ -81,13 +81,15 @@ html, body {
   font-size: var(--basic-size);
 }
 
+/* ------🚗 header 🚗------ */
 .header {
   width: 100%;
   height: 80px;
-  background-color: #2F4B92;
-  /*     position: fixed;
-      top: 0;
-      left: 0; */
+  background-color: rgba(47, 75, 146, 0.5137254902);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
 }
 .header .inner {
   width: 1280px;
@@ -112,24 +114,26 @@ html, body {
   padding: 0 20px;
 }
 
-/*  .header end */
-.pofol {
+/* ------🚗 main 🚗------ */
+.main {
   width: 100%;
   margin: 0 auto;
   background-color: #2F4B92;
 }
-.pofol .main {
-  width: 1280px;
-  max-height: 1024px;
+.main .title {
+  max-width: 1280px;
+  width: calc(100% - 30px);
+  /* height: 100vh; */
+  max-height: 900px;
   margin: 0 auto;
-  padding: 250px 0;
+  padding: 300px 0;
 }
-.pofol .main--item {
+.main .title--item {
   position: relative;
   text-align: center;
   font-family: "Racing Sans One", sans-serif;
 }
-.pofol .main--item input[type=text] {
+.main .title--item input[type=text] {
   width: 785px;
   height: 180px;
   border: 1px solid #BDFF00;
@@ -141,7 +145,7 @@ html, body {
   color: #BDFF00;
   font-family: "Racing Sans One", sans-serif;
 }
-.pofol .main--item img {
+.main .title--item img {
   width: 60px;
   vertical-align: middle;
   position: absolute;
@@ -149,28 +153,462 @@ html, body {
   right: 300px;
   transform: translateY(-20%);
 }
-.pofol .main input::-moz-placeholder {
+.main .title input::-moz-placeholder {
   font-size: 10rem;
   color: #BDFF00;
   text-align: center;
   font-family: "Racing Sans One", sans-serif;
 }
-.pofol .main input::placeholder {
+.main .title input::placeholder {
   font-size: 10rem;
   color: #BDFF00;
   text-align: center;
   font-family: "Racing Sans One", sans-serif;
 }
-.pofol .main input:focus {
+.main .title input:focus {
   outline: 1px solid #BDFF00;
 }
-.pofol .main h1 {
+.main .title h1 {
   font-size: 9rem;
   color: #fff;
+  padding: 10px 0 0;
   text-align: center;
 }
-.pofol .main p {
+.main .title p {
   color: #fff;
   padding: 20px 0;
   font-size: 25px;
+}
+.main .profile {
+  max-width: 1280px;
+  width: calc(100% - 30px);
+  max-height: 900px;
+  margin: 240px auto 150px;
+  display: flex;
+  /*         padding: 240px 0; */
+}
+.main .profile--hr {
+  width: 48%;
+  max-height: 643px;
+  margin: 0 auto;
+}
+.main .profile--hr figure {
+  width: 315px;
+  height: 430px;
+  border-radius: 50px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.main .profile--hr figure img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.main .profile--hr--text {
+  width: 48%;
+  text-align: center;
+  margin: 0 auto;
+}
+.main .profile--hr--text h3 {
+  width: 265px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 25px;
+  color: #BDFF00;
+  border: 1px solid #BDFF00;
+  border-radius: 50px;
+  margin-bottom: 20px;
+  margin: 50px auto 15px;
+}
+.main .profile--hr--text p {
+  color: #fff;
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+.main .profile--info {
+  width: 48%;
+  max-height: 643px;
+}
+.main .profile--info--one {
+  margin-bottom: 50px;
+}
+.main .profile--info--one h3 {
+  width: 265px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 25px;
+  color: #BDFF00;
+  border: 1px solid #BDFF00;
+  border-radius: 50px;
+}
+.main .profile--info--one p {
+  color: #fff;
+  font-size: 20px;
+  padding: 30px 20px 0;
+}
+.main .profile--info--tool h3 {
+  width: 120px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 25px;
+  color: #BDFF00;
+  border: 1px solid #BDFF00;
+  border-radius: 50px;
+  margin-bottom: 20px;
+}
+.main .profile--info--tool--icon {
+  display: flex;
+}
+.main .profile--info--tool--icon figure {
+  height: 60px;
+}
+.main .profile--info--tool--icon figure img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.main .web {
+  width: 100%;
+  margin: 0 auto;
+}
+.main .web .web1--list {
+  background: url(../img/지니뮤직배경.png) center center/cover no-repeat;
+  background-color: #E2F3FF;
+  margin: 0 auto;
+}
+.main .web .web1--list--item {
+  width: 1280px;
+  height: 900px;
+  margin: 0 auto;
+  padding: 170px 0;
+  display: flex;
+}
+.main .web .web1--list--item--pcmock figure {
+  height: 650px;
+  padding-top: 30px;
+}
+.main .web .web1--list--item--pcmock figure img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.main .web .web1--list--item--mobilemock {
+  background: url(../img/지니뮤직모바일화면.png) no-repeat;
+  background-size: 150px, 320px;
+  width: 194px;
+  height: 320px;
+  position: absolute;
+  transform: translate(500px, 250px);
+  z-index: 9;
+  position: absolute;
+  overflow: hidden;
+}
+.main .web .web1--list--item--text {
+  padding: 50px 0 0 150px;
+  position: relative;
+}
+.main .web .web1--list--item--text--title {
+  display: flex;
+  align-items: center;
+}
+.main .web .web1--list--item--text--title::before {
+  content: "";
+  background-color: #75C5FF;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  position: absolute;
+  top: 30px;
+  left: 120px;
+}
+.main .web .web1--list--item--text--title h2 {
+  font-size: 40px;
+  margin-right: 40px;
+  font-weight: 600;
+  z-index: 9;
+}
+.main .web .web1--list--item--text--title P {
+  font-size: 30px;
+}
+.main .web .web1--list--item--text--info {
+  padding: 65px 0 40px;
+}
+.main .web .web1--list--item--text--info li {
+  font-size: 30px;
+  display: flex;
+  margin-bottom: 30px;
+}
+.main .web .web1--list--item--text--info li p {
+  width: 120px;
+  font-weight: 600;
+  margin-right: 60px;
+}
+.main .web .web1--list--item--text--btn {
+  display: flex;
+}
+.main .web .web1--list--item--text--btn a {
+  width: 180px;
+  height: 50px;
+  background-color: #fff;
+  border: 1px solid #333;
+  border-radius: 15px;
+  text-align: center;
+  line-height: 50px;
+  display: block;
+  margin-right: 20px;
+  font-size: 22px;
+  font-weight: 500;
+}
+.main .web .web2--list {
+  background: url(../img/하림펫푸드배경.png) center center/cover no-repeat;
+  background-color: #E2F3FF;
+  margin: 0 auto;
+}
+.main .web .web2--list--item {
+  width: 1280px;
+  height: 900px;
+  margin: 0 auto;
+  padding: 170px 0;
+  display: flex;
+}
+.main .web .web2--list--item figure {
+  height: 650px;
+  padding-top: 30px;
+}
+.main .web .web2--list--item figure img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.main .web .web2--list--item--text {
+  padding: 50px 0 0 150px;
+  position: relative;
+}
+.main .web .web2--list--item--text--title {
+  display: flex;
+  align-items: center;
+}
+.main .web .web2--list--item--text--title::before {
+  content: "";
+  background-color: #FFB6B6;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  position: absolute;
+  top: 30px;
+  left: 120px;
+}
+.main .web .web2--list--item--text--title h2 {
+  font-size: 40px;
+  margin-right: 40px;
+  font-weight: 600;
+  z-index: 9;
+}
+.main .web .web2--list--item--text--title P {
+  font-size: 30px;
+}
+.main .web .web2--list--item--text--info {
+  padding: 65px 0 40px;
+}
+.main .web .web2--list--item--text--info li {
+  font-size: 30px;
+  display: flex;
+  margin-bottom: 30px;
+}
+.main .web .web2--list--item--text--info li p {
+  width: 120px;
+  font-weight: 600;
+  margin-right: 60px;
+}
+.main .web .web2--list--item--text--btn {
+  display: flex;
+}
+.main .web .web2--list--item--text--btn a {
+  width: 180px;
+  height: 50px;
+  background-color: #fff;
+  border: 1px solid #333;
+  border-radius: 15px;
+  text-align: center;
+  line-height: 50px;
+  display: block;
+  margin-right: 20px;
+  font-size: 22px;
+  font-weight: 500;
+}
+.main .web .web3--list {
+  background: url(../img/독도전시관배경.png) center center/cover no-repeat;
+  background-color: #E2F3FF;
+  margin: 0 auto;
+  color: #fff;
+}
+.main .web .web3--list--item {
+  width: 1280px;
+  height: 900px;
+  margin: 0 auto;
+  padding: 170px 0;
+  display: flex;
+}
+.main .web .web3--list--item figure {
+  height: 650px;
+  padding-top: 30px;
+}
+.main .web .web3--list--item figure img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.main .web .web3--list--item--text {
+  padding: 50px 0 0 150px;
+  position: relative;
+}
+.main .web .web3--list--item--text--title {
+  display: flex;
+  align-items: center;
+}
+.main .web .web3--list--item--text--title::before {
+  content: "";
+  background-color: #6AA1F4;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  position: absolute;
+  top: 30px;
+  left: 120px;
+}
+.main .web .web3--list--item--text--title h2 {
+  font-size: 40px;
+  margin-right: 40px;
+  font-weight: 500;
+  z-index: 9;
+}
+.main .web .web3--list--item--text--title P {
+  font-size: 30px;
+}
+.main .web .web3--list--item--text--info {
+  padding: 65px 0 40px;
+}
+.main .web .web3--list--item--text--info li {
+  font-size: 30px;
+  display: flex;
+  margin-bottom: 30px;
+}
+.main .web .web3--list--item--text--info li p {
+  width: 120px;
+  font-weight: 500;
+  margin-right: 60px;
+}
+.main .web .web3--list--item--text--btn {
+  display: flex;
+}
+.main .web .web3--list--item--text--btn a {
+  width: 180px;
+  height: 50px;
+  background-color: #fff;
+  border: 1px solid #333;
+  border-radius: 15px;
+  text-align: center;
+  line-height: 50px;
+  display: block;
+  margin-right: 20px;
+  font-size: 22px;
+  font-weight: 500;
+  color: #333;
+}
+.main .mobile {
+  width: 100%;
+  margin: 0 auto;
+}
+.main .mobile .mobile1 {
+  background: url(../img/진에어배경2.png) center center/cover no-repeat;
+  background-color: #E2F3FF;
+  margin: 0 auto;
+}
+.main .mobile .mobile1--item {
+  width: 1280px;
+  height: 900px;
+  margin: 0 auto;
+  padding: 170px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.main .mobile .mobile1--item figure {
+  height: 650px;
+  padding-top: 30px;
+}
+.main .mobile .mobile1--item figure img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.main .mobile .mobile1--item--text {
+  padding-top: 50px;
+  position: relative;
+}
+.main .mobile .mobile1--item--text--title {
+  display: flex;
+  align-items: center;
+}
+.main .mobile .mobile1--item--text--title::before {
+  content: "";
+  background-color: #DEEF0F;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  position: absolute;
+  top: 30px;
+  left: -30px;
+}
+.main .mobile .mobile1--item--text--title h2 {
+  font-size: 40px;
+  margin-right: 40px;
+  font-weight: 600;
+  z-index: 9;
+}
+.main .mobile .mobile1--item--text--title P {
+  font-size: 30px;
+}
+.main .mobile .mobile1--item--text--info {
+  padding: 65px 0 40px;
+}
+.main .mobile .mobile1--item--text--info li {
+  font-size: 30px;
+  display: flex;
+  margin-bottom: 30px;
+}
+.main .mobile .mobile1--item--text--info li p {
+  width: 120px;
+  font-weight: 600;
+  margin-right: 60px;
+}
+.main .mobile .mobile1--item--text--btn {
+  display: flex;
+}
+.main .mobile .mobile1--item--text--btn a {
+  width: 180px;
+  height: 50px;
+  background-color: #fff;
+  border: 1px solid #333;
+  border-radius: 15px;
+  text-align: center;
+  line-height: 50px;
+  display: block;
+  margin-right: 20px;
+  font-size: 22px;
+  font-weight: 500;
+}
+.main .mobile .mobile1 .mockup {
+  display: flex;
+}
+.main .mobile .mobile1 .mockup figure {
+  height: 564px;
 }/*# sourceMappingURL=style.css.map */
