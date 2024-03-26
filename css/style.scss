@@ -40,6 +40,12 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'JalnanGothic';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_231029@1.1/JalnanGothic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
 *,
 ::before,
@@ -79,7 +85,7 @@ html,body {
     font-size: var(--basic-size);
 }
 
-/* ------🚗 header 🚗------ */
+/* ------🔥🔥 header 🔥🔥 ------ */
 .header {
     width: 100%;
     height: 80px;
@@ -112,7 +118,7 @@ html,body {
     }
 }
 
-/* ------🚗 main 🚗------ */
+/* ------🔥🔥 main 🔥🔥------ */
 .main {
     width: 100%;    
     margin: 0 auto;
@@ -121,7 +127,8 @@ html,body {
         max-width: 1280px;
         width: calc(100% - 30px);
         /* height: 100vh; */
-        max-height: 900px;
+        /* max-height: 900px; */
+        height: 900px;
         margin: 0 auto;
         padding: 300px 0;
         &--item {
@@ -171,10 +178,11 @@ html,body {
     .profile {
         max-width: 1280px;
         width: calc(100% - 30px);
-        max-height: 900px;
+        height: 900px;
+        /* max-height: 900px; */
         margin: 240px auto 150px;
         display: flex;
-/*         padding: 240px 0; */
+    /*  padding: 240px 0; */
         &--hr {
             width: 48%;
             max-height: 643px;
@@ -260,7 +268,7 @@ html,body {
                 }
             }            
         }        
-    }
+    } /* .profile end */
     .web {        
         width: 100%;
         margin: 0 auto;
@@ -276,6 +284,29 @@ html,body {
                     padding: 170px 0;   
                     display: flex;    
                     &--pcmock {
+                        position: relative;
+                        span {
+                            background: url(../img/지니뮤직PC.jpg) no-repeat;
+                            width: 563px;
+                            height: 320px;
+                            position: absolute;
+                            top: 55px;
+                            left: 26px;
+                        &:hover {
+                            animation: genie 12s infinite ease-in-out;
+                            @keyframes genie {
+                                0% {
+                                    background-position: 0 0;
+                                }
+                                50% {
+                                    background-position: 0 -1464px;
+                                }
+                                100% {
+                                    background-position: 0 0;
+                                }
+                            }
+                        }    
+                        }
                         figure {
                             height: 650px;
                             padding-top: 30px;
@@ -294,9 +325,38 @@ html,body {
                         position: absolute;
                         transform: translate(500px, 250px);
                         z-index: 9;
-                        position: absolute;
                         overflow: hidden;
-                        
+                        figure {
+                            z-index: 9999;
+                            position: absolute;
+                            top: 10px;
+                            left: 50px;
+                        } 
+                        span {
+                            background: url(../img/지니뮤직모바일.jpg) no-repeat;
+                            width: 133px;
+                            height: 290px;
+                            position: absolute;
+                            top: 6px;
+                            left: 9px;
+                            border-radius: 18px;
+                        &:hover {
+                            animation: genie 12s infinite ease-in-out;
+                            @keyframes genie {
+                                0% {
+                                    background-position: 0 0;
+                                }
+                                50% {
+                                    background-position: 0 -811px;
+                                }
+                                100% {
+                                    background-position: 0 0;
+                                }
+                            }
+                        }                       
+                          
+                        }
+                                                
                     }
                     &--text {
                         padding: 50px 0 0 150px;
@@ -372,16 +432,43 @@ html,body {
                     height: 900px;
                     margin: 0 auto;
                     padding: 170px 0;   
-                    display: flex;     
-                    figure {
-                        height: 650px;
-                        padding-top: 30px;
-                        img {
-                            width: 100%;
-                            height: 100%;
-                            object-fit: cover;
+                    display: flex;  
+                    &--mockup{         
+                        position: relative;                 
+                        span {
+                            background: url(../img/하림펫푸드PC.png) no-repeat;
+                            width: 562px;
+                            height: 320px;
+                            position: absolute;
+                            top: 55px;
+                            left: 26px;
+                            
+                        &:hover {
+                            animation: harim 12s infinite ease-in-out;
+                            @keyframes harim {
+                                0% {
+                                    background-position: 0 0;
+                                }
+                                50% {
+                                    background-position: 0 -1239px;
+                                }
+                                100% {
+                                    background-position: 0 0;
+                                }
+                            }
+                        }    
+                        }                  
+                        figure {
+                            height: 650px;
+                            padding-top: 30px;
+                            img {
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                            }
                         }
                     }
+                    
                     &--text {
                         padding: 50px 0 0 150px;
                         position: relative;
@@ -457,16 +544,42 @@ html,body {
                     height: 900px;
                     margin: 0 auto;
                     padding: 170px 0;   
-                    display: flex;     
-                    figure {
-                        height: 650px;
-                        padding-top: 30px;
-                        img {
-                            width: 100%;
-                            height: 100%;
-                            object-fit: cover;
-                        }
-                    }
+                    display: flex;
+                    &--mockup{
+                        position: relative;
+                        span {
+                            background: url(../img/독도전시관PC.png) no-repeat;
+                            width: 562px;
+                            height: 320px;
+                            position: absolute;
+                            top: 54px;
+                            left: 26px;
+                        &:hover {
+                            animation: harim 12s infinite ease-in-out;
+                            @keyframes harim {
+                                0% {
+                                    background-position: 0 0;
+                                }
+                                50% {
+                                    background-position: 0 -619px;
+                                }
+                                100% {
+                                    background-position: 0 0;
+                                }
+                            }
+                        }    
+                        }     
+                        figure {
+                            height: 650px;
+                            padding-top: 30px;
+                            img {
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                            }
+                        }             
+                    }   
+                   
                     &--text {
                         padding: 50px 0 0 150px;
                         position: relative;
@@ -532,7 +645,7 @@ html,body {
             }
         }
 
-    }
+    } /* web end */
     .mobile {        
         width: 100%;
         margin: 0 auto;
@@ -547,14 +660,10 @@ html,body {
                 padding: 170px 0;   
                 display: flex;  
                 justify-content: space-between;   
+                position: relative;
                 figure {
                     height: 650px;
-                    padding-top: 30px;
-                    img {
-                        width: 100%;
-                        height: 100%;
-                        object-fit: cover;
-                    }
+                    padding-top: 30px;                    
                 }
                 &--text {
                     padding-top: 50px;
@@ -606,19 +715,292 @@ html,body {
                             border-radius: 15px;
                             text-align: center;
                             line-height: 50px;
-                            display: block;                                margin-right: 20px;
+                            display: block;                                
+                            margin-right: 20px;
                             font-size: 22px;
                             font-weight: 500;                            
                         }
                     }
                 }
+                &--mobilemock {       
+                    position: relative;             
+                    &--front{
+                        background: url(../img/진에어폰목업3.png) no-repeat;
+                        background-size: 500px, 580px;
+                        width: 500px;
+                        height: 580px;
+                        position: absolute;
+                        top:50%;
+                        right:0;
+                        transform: translateY(-50%);
+                        overflow: hidden;
+                        z-index: 999;
+                        figure {
+                            width: 120px;
+                            height: 50px;
+                            z-index: 9999;
+                            position: absolute;
+                            top: 0;
+                            left: 110px;                        
+                        } 
+                        span {
+                            background: url(../img/진에어모바일.png) no-repeat;
+                            width: 256px;
+                            height: 550px;
+                            position: absolute;
+                            top: 12px;
+                            left: 16px;
+                            border-radius: 30px;
+                        &:hover {
+                            animation: genie 12s infinite ease-in-out;
+                            @keyframes genie {
+                                0% {
+                                    background-position: 0 0;
+                                }
+                                50% {
+                                    background-position: 0 -586px;
+                                }
+                                100% {
+                                    background-position: 0 0;
+                                }
+                            }
+                        }
+                    }                       
+                    }
+                
+                      
+                }
             }
-            .mockup {
-                display: flex;
+            
+        }
+        .mobile2 {
+            /* background: url(../img/진에어배경2.png) center center / cover no-repeat; */
+            background-color: #EEEEEE;
+            margin: 0 auto;                
+            &--item {
+                width: 1280px;
+                height: 900px;
+                margin: 0 auto;
+                padding: 170px 0;   
+                display: flex;  
+                justify-content: space-between;   
+                position: relative;
                 figure {
-                    height: 564px;
+                    height: 650px;
+                    padding-top: 30px;                    
+                }
+                &--text {
+                    padding-top: 50px;
+                    position: relative;
+                    &--title{
+                        display: flex;
+                        align-items: center;                    
+                        &::before {
+                            content: '';
+                            background-color: #DEEF0F;
+                            width: 50px;
+                            height: 50px;
+                            border-radius: 50px;
+                            position: absolute;
+                            top: 30px;
+                            left: -30px;
+                        }
+                        h2 {
+                            font-size: 40px;
+                            margin-right: 40px;
+                            font-weight: 600;
+                            z-index: 9;
+                        }
+                        P {
+                           font-size: 30px; 
+                        }
+                    }
+        
+                    &--info {             
+                        padding: 65px 0 40px;
+                        li {
+                            font-size: 30px;
+                            display: flex;
+                            margin-bottom: 30px;
+                            p {
+                                width: 120px;
+                                font-weight: 600;
+                                margin-right: 60px;
+                            }
+                        }
+                    }
+                    &--btn {               
+                        display: flex;                         
+                        a {
+                            width: 180px;
+                            height: 50px;
+                            background-color: #fff;
+                            border:1px solid #333;
+                            border-radius: 15px;
+                            text-align: center;
+                            line-height: 50px;
+                            display: block;                                
+                            margin-right: 20px;
+                            font-size: 22px;
+                            font-weight: 500;                            
+                        }
+                    }
+                }
+                &--mobilemock {       
+                    position: relative;             
+                    &--front{
+                        background: url(../img/거북이상회목업3.png) no-repeat;
+                        background-size: 500px, 580px;
+                        width: 500px;
+                        height: 580px;
+                        position: absolute;
+                        top:50%;
+                        right:0;
+                        transform: translateY(-50%);
+                        overflow: hidden;
+                        z-index: 999;
+                        figure {
+                            width: 120px;
+                            height: 50px;
+                            z-index: 9999;
+                            position: absolute;
+                            top: 0;
+                            left: 110px;                        
+                        } 
+                        span {
+                            background: url(../img/거북이상회.jpg) no-repeat;
+                            width: 256px;
+                            height: 550px;
+                            position: absolute;
+                            top: 12px;
+                            left: 16px;
+                            border-radius: 30px;
+                        &:hover {
+                            animation: genie 12s infinite ease-in-out;
+                            @keyframes genie {
+                                0% {
+                                    background-position: 0 0;
+                                }
+                                50% {
+                                    background-position: 0 -710px;
+                                }
+                                100% {
+                                    background-position: 0 0;
+                                }
+                            }
+                        }
+                    }                       
+                    }
+                
+                      
+                }
+            }
+            
+        }
+    }  /* .mobile end */
+    .graphic {
+        width: 100%;
+        margin: 0 auto;
+        padding: 240px 0;
+        /* background-color: #fff; */
+        .design {
+            width: 1920px;
+            &--title {
+                width: 1280px;
+                margin: 0 auto;
+                color: #fff;
+                display: flex;
+                justify-content: space-between;
+                h1 {
+                    font-size: 40px;
+                    padding-bottom: 100px;
+                }
+                p {font-size: 20px;}
+            }
+            .swiper-wrapper {                
+                height: 530px;
+                .swiper-slide {
+                    /* max-height: 500px; */
+                    /* height: 20.83vw; */
+                    width: 550px;
+                    margin: 0 auto;
+                    color: #fff;
+                    text-align: center;                    
+                    figure {
+                        /* max-height: 350px;
+                        height: 18.22vw; */
+                        height: 360px;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                    h4 {
+                        font-size: 30px;
+                        padding: 20px 0;
+                    }
+                    p {
+                        font-size: 20px;
+                    }
+                }
+                .swiper-slide-next + .swiper-slide{
+                    transform: scale(1.2);
+                    z-index: 9;
+                    
                 }
             }
         }
-    }    
+    } /* .graphic end */
+
+    .thankU {
+        width: 100%;
+        height: 900px;
+        margin: 0 auto;
+        padding: 240px 0;
+        .list {
+            width: 1280px;
+            margin: 0 auto;
+            text-align: center;
+            color: #fff;
+            h1 {
+                font-size: 100px;
+                padding: 100px;
+                font-family: 'JalnanGothic';
+                font-style: italic;
+                text-align: center;
+            }
+            &--call {   
+                width: 500px; 
+                margin: 0 auto;            
+                display: flex;  
+                justify-content: space-between;  
+                &--icon {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;                    
+                    margin: 0 50px 50px;
+                    figure {
+                        width: 30px;
+                        height: 30px;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                    p {
+                        padding-top: 10px;
+                    }
+                }
+            }
+            h5 {
+                line-height: 1.5;
+                font-size: 14px;
+                font-weight: lighter;
+                padding-top:150px;
+                
+            }
+        }
+    }
 }
