@@ -44,6 +44,12 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "SUIT-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
 *,
 ::before,
 ::after {
@@ -121,7 +127,7 @@ html, body {
 }
 
 /* ------🔥🔥 main 🔥🔥------ */
-.main {
+#main {
   width: 100%;
   margin: 0 auto;
   background-color: #2F4B92;
@@ -130,7 +136,7 @@ html, body {
   /* .mobile end */
   /* .graphic end */
 }
-.main .title {
+#main .title {
   max-width: 1280px;
   width: calc(100% - 30px);
   /* height: 100vh; */
@@ -139,12 +145,12 @@ html, body {
   margin: 0 auto;
   padding: 300px 0;
 }
-.main .title--item {
+#main .title--item {
   position: relative;
   text-align: center;
   font-family: "Racing Sans One", sans-serif;
 }
-.main .title--item input[type=text] {
+#main .title--item input[type=text] {
   width: 785px;
   height: 180px;
   border: 1px solid #BDFF00;
@@ -156,7 +162,7 @@ html, body {
   color: #BDFF00;
   font-family: "Racing Sans One", sans-serif;
 }
-.main .title--item img {
+#main .title--item img {
   width: 60px;
   vertical-align: middle;
   position: absolute;
@@ -164,33 +170,33 @@ html, body {
   right: 300px;
   transform: translateY(-20%);
 }
-.main .title input::-moz-placeholder {
+#main .title input::-moz-placeholder {
   font-size: 10rem;
   color: #BDFF00;
   text-align: center;
   font-family: "Racing Sans One", sans-serif;
 }
-.main .title input::placeholder {
+#main .title input::placeholder {
   font-size: 10rem;
   color: #BDFF00;
   text-align: center;
   font-family: "Racing Sans One", sans-serif;
 }
-.main .title input:focus {
+#main .title input:focus {
   outline: 1px solid #BDFF00;
 }
-.main .title h1 {
+#main .title h1 {
   font-size: 9rem;
   color: #fff;
   padding: 10px 0 0;
   text-align: center;
 }
-.main .title p {
+#main .title p {
   color: #fff;
   padding: 20px 0;
   font-size: 25px;
 }
-.main .profile {
+#main .profile {
   max-width: 1280px;
   width: calc(100% - 30px);
   height: 900px;
@@ -199,30 +205,30 @@ html, body {
   display: flex;
   /*  padding: 240px 0; */
 }
-.main .profile--hr {
+#main .profile--hr {
   width: 48%;
   max-height: 643px;
   margin: 0 auto;
 }
-.main .profile--hr figure {
+#main .profile--hr figure {
   width: 315px;
   height: 430px;
   border-radius: 50px;
   overflow: hidden;
   margin: 0 auto;
 }
-.main .profile--hr figure img {
+#main .profile--hr figure img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.main .profile--hr--text {
+#main .profile--hr--text {
   width: 48%;
   text-align: center;
   margin: 0 auto;
 }
-.main .profile--hr--text h3 {
+#main .profile--hr--text h3 {
   width: 265px;
   height: 50px;
   text-align: center;
@@ -234,19 +240,19 @@ html, body {
   margin-bottom: 20px;
   margin: 50px auto 15px;
 }
-.main .profile--hr--text p {
+#main .profile--hr--text p {
   color: #fff;
   font-size: 20px;
   padding-bottom: 10px;
 }
-.main .profile--info {
+#main .profile--info {
   width: 48%;
   max-height: 643px;
 }
-.main .profile--info--one {
+#main .profile--info--one {
   margin-bottom: 50px;
 }
-.main .profile--info--one h3 {
+#main .profile--info--one h3 {
   width: 265px;
   height: 50px;
   text-align: center;
@@ -256,12 +262,12 @@ html, body {
   border: 1px solid #BDFF00;
   border-radius: 50px;
 }
-.main .profile--info--one p {
+#main .profile--info--one p {
   color: #fff;
   font-size: 20px;
   padding: 30px 20px 0;
 }
-.main .profile--info--tool h3 {
+#main .profile--info--tool h3 {
   width: 120px;
   height: 50px;
   text-align: center;
@@ -272,38 +278,38 @@ html, body {
   border-radius: 50px;
   margin-bottom: 20px;
 }
-.main .profile--info--tool--icon {
+#main .profile--info--tool--icon {
   display: flex;
 }
-.main .profile--info--tool--icon figure {
+#main .profile--info--tool--icon figure {
   height: 60px;
 }
-.main .profile--info--tool--icon figure img {
+#main .profile--info--tool--icon figure img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.main .web {
+#main .web {
   width: 100%;
   margin: 0 auto;
 }
-.main .web .web1--list {
+#main .web .web1--list {
   background: url(../img/지니뮤직배경.png) center center/cover no-repeat;
   background-color: #E2F3FF;
   margin: 0 auto;
 }
-.main .web .web1--list--item {
+#main .web .web1--list--item {
   width: 1280px;
   height: 900px;
   margin: 0 auto;
   padding: 170px 0;
   display: flex;
 }
-.main .web .web1--list--item--pcmock {
+#main .web .web1--list--item--pcmock {
   position: relative;
 }
-.main .web .web1--list--item--pcmock span {
+#main .web .web1--list--item--pcmock span {
   background: url(../img/지니뮤직PC.jpg) no-repeat;
   width: 563px;
   height: 320px;
@@ -311,7 +317,7 @@ html, body {
   top: 55px;
   left: 26px;
 }
-.main .web .web1--list--item--pcmock span:hover {
+#main .web .web1--list--item--pcmock span:hover {
   animation: genie 12s infinite ease-in-out;
 }
 @keyframes genie {
@@ -325,17 +331,17 @@ html, body {
     background-position: 0 0;
   }
 }
-.main .web .web1--list--item--pcmock figure {
+#main .web .web1--list--item--pcmock figure {
   height: 650px;
   padding-top: 30px;
 }
-.main .web .web1--list--item--pcmock figure img {
+#main .web .web1--list--item--pcmock figure img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.main .web .web1--list--item--mobilemock {
+#main .web .web1--list--item--mobilemock {
   background: url(../img/지니뮤직모바일화면.png) no-repeat;
   background-size: 150px, 320px;
   width: 194px;
@@ -345,13 +351,13 @@ html, body {
   z-index: 9;
   overflow: hidden;
 }
-.main .web .web1--list--item--mobilemock figure {
+#main .web .web1--list--item--mobilemock figure {
   z-index: 9999;
   position: absolute;
   top: 10px;
   left: 50px;
 }
-.main .web .web1--list--item--mobilemock span {
+#main .web .web1--list--item--mobilemock span {
   background: url(../img/지니뮤직모바일.jpg) no-repeat;
   width: 133px;
   height: 290px;
@@ -360,7 +366,7 @@ html, body {
   left: 9px;
   border-radius: 18px;
 }
-.main .web .web1--list--item--mobilemock span:hover {
+#main .web .web1--list--item--mobilemock span:hover {
   animation: genie 12s infinite ease-in-out;
 }
 @keyframes genie {
@@ -374,15 +380,15 @@ html, body {
     background-position: 0 0;
   }
 }
-.main .web .web1--list--item--text {
+#main .web .web1--list--item--text {
   padding: 50px 0 0 150px;
   position: relative;
 }
-.main .web .web1--list--item--text--title {
+#main .web .web1--list--item--text--title {
   display: flex;
   align-items: center;
 }
-.main .web .web1--list--item--text--title::before {
+#main .web .web1--list--item--text--title::before {
   content: "";
   background-color: #75C5FF;
   width: 50px;
@@ -392,32 +398,32 @@ html, body {
   top: 30px;
   left: 120px;
 }
-.main .web .web1--list--item--text--title h2 {
+#main .web .web1--list--item--text--title h2 {
   font-size: 40px;
   margin-right: 40px;
   font-weight: 600;
   z-index: 9;
 }
-.main .web .web1--list--item--text--title P {
+#main .web .web1--list--item--text--title P {
   font-size: 30px;
 }
-.main .web .web1--list--item--text--info {
+#main .web .web1--list--item--text--info {
   padding: 65px 0 40px;
 }
-.main .web .web1--list--item--text--info li {
+#main .web .web1--list--item--text--info li {
   font-size: 30px;
   display: flex;
   margin-bottom: 30px;
 }
-.main .web .web1--list--item--text--info li p {
+#main .web .web1--list--item--text--info li p {
   width: 120px;
   font-weight: 600;
   margin-right: 60px;
 }
-.main .web .web1--list--item--text--btn {
+#main .web .web1--list--item--text--btn {
   display: flex;
 }
-.main .web .web1--list--item--text--btn a {
+#main .web .web1--list--item--text--btn a {
   width: 180px;
   height: 50px;
   background-color: #fff;
@@ -430,22 +436,22 @@ html, body {
   font-size: 22px;
   font-weight: 500;
 }
-.main .web .web2--list {
+#main .web .web2--list {
   background: url(../img/하림펫푸드배경.png) center center/cover no-repeat;
   background-color: #E2F3FF;
   margin: 0 auto;
 }
-.main .web .web2--list--item {
+#main .web .web2--list--item {
   width: 1280px;
   height: 900px;
   margin: 0 auto;
   padding: 170px 0;
   display: flex;
 }
-.main .web .web2--list--item--mockup {
+#main .web .web2--list--item--mockup {
   position: relative;
 }
-.main .web .web2--list--item--mockup span {
+#main .web .web2--list--item--mockup span {
   background: url(../img/하림펫푸드PC.png) no-repeat;
   width: 562px;
   height: 320px;
@@ -453,7 +459,7 @@ html, body {
   top: 55px;
   left: 26px;
 }
-.main .web .web2--list--item--mockup span:hover {
+#main .web .web2--list--item--mockup span:hover {
   animation: harim 12s infinite ease-in-out;
 }
 @keyframes harim {
@@ -467,25 +473,25 @@ html, body {
     background-position: 0 0;
   }
 }
-.main .web .web2--list--item--mockup figure {
+#main .web .web2--list--item--mockup figure {
   height: 650px;
   padding-top: 30px;
 }
-.main .web .web2--list--item--mockup figure img {
+#main .web .web2--list--item--mockup figure img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.main .web .web2--list--item--text {
+#main .web .web2--list--item--text {
   padding: 50px 0 0 150px;
   position: relative;
 }
-.main .web .web2--list--item--text--title {
+#main .web .web2--list--item--text--title {
   display: flex;
   align-items: center;
 }
-.main .web .web2--list--item--text--title::before {
+#main .web .web2--list--item--text--title::before {
   content: "";
   background-color: #FFB6B6;
   width: 50px;
@@ -495,32 +501,32 @@ html, body {
   top: 30px;
   left: 120px;
 }
-.main .web .web2--list--item--text--title h2 {
+#main .web .web2--list--item--text--title h2 {
   font-size: 40px;
   margin-right: 40px;
   font-weight: 600;
   z-index: 9;
 }
-.main .web .web2--list--item--text--title P {
+#main .web .web2--list--item--text--title P {
   font-size: 30px;
 }
-.main .web .web2--list--item--text--info {
+#main .web .web2--list--item--text--info {
   padding: 65px 0 40px;
 }
-.main .web .web2--list--item--text--info li {
+#main .web .web2--list--item--text--info li {
   font-size: 30px;
   display: flex;
   margin-bottom: 30px;
 }
-.main .web .web2--list--item--text--info li p {
+#main .web .web2--list--item--text--info li p {
   width: 120px;
   font-weight: 600;
   margin-right: 60px;
 }
-.main .web .web2--list--item--text--btn {
+#main .web .web2--list--item--text--btn {
   display: flex;
 }
-.main .web .web2--list--item--text--btn a {
+#main .web .web2--list--item--text--btn a {
   width: 180px;
   height: 50px;
   background-color: #fff;
@@ -533,23 +539,23 @@ html, body {
   font-size: 22px;
   font-weight: 500;
 }
-.main .web .web3--list {
+#main .web .web3--list {
   background: url(../img/독도전시관배경.png) center center/cover no-repeat;
   background-color: #E2F3FF;
   margin: 0 auto;
   color: #fff;
 }
-.main .web .web3--list--item {
+#main .web .web3--list--item {
   width: 1280px;
   height: 900px;
   margin: 0 auto;
   padding: 170px 0;
   display: flex;
 }
-.main .web .web3--list--item--mockup {
+#main .web .web3--list--item--mockup {
   position: relative;
 }
-.main .web .web3--list--item--mockup span {
+#main .web .web3--list--item--mockup span {
   background: url(../img/독도전시관PC.png) no-repeat;
   width: 562px;
   height: 320px;
@@ -557,7 +563,7 @@ html, body {
   top: 54px;
   left: 26px;
 }
-.main .web .web3--list--item--mockup span:hover {
+#main .web .web3--list--item--mockup span:hover {
   animation: harim 12s infinite ease-in-out;
 }
 @keyframes harim {
@@ -571,25 +577,25 @@ html, body {
     background-position: 0 0;
   }
 }
-.main .web .web3--list--item--mockup figure {
+#main .web .web3--list--item--mockup figure {
   height: 650px;
   padding-top: 30px;
 }
-.main .web .web3--list--item--mockup figure img {
+#main .web .web3--list--item--mockup figure img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.main .web .web3--list--item--text {
+#main .web .web3--list--item--text {
   padding: 50px 0 0 150px;
   position: relative;
 }
-.main .web .web3--list--item--text--title {
+#main .web .web3--list--item--text--title {
   display: flex;
   align-items: center;
 }
-.main .web .web3--list--item--text--title::before {
+#main .web .web3--list--item--text--title::before {
   content: "";
   background-color: #6AA1F4;
   width: 50px;
@@ -599,32 +605,32 @@ html, body {
   top: 30px;
   left: 120px;
 }
-.main .web .web3--list--item--text--title h2 {
+#main .web .web3--list--item--text--title h2 {
   font-size: 40px;
   margin-right: 40px;
   font-weight: 500;
   z-index: 9;
 }
-.main .web .web3--list--item--text--title P {
+#main .web .web3--list--item--text--title P {
   font-size: 30px;
 }
-.main .web .web3--list--item--text--info {
+#main .web .web3--list--item--text--info {
   padding: 65px 0 40px;
 }
-.main .web .web3--list--item--text--info li {
+#main .web .web3--list--item--text--info li {
   font-size: 30px;
   display: flex;
   margin-bottom: 30px;
 }
-.main .web .web3--list--item--text--info li p {
+#main .web .web3--list--item--text--info li p {
   width: 120px;
   font-weight: 500;
   margin-right: 60px;
 }
-.main .web .web3--list--item--text--btn {
+#main .web .web3--list--item--text--btn {
   display: flex;
 }
-.main .web .web3--list--item--text--btn a {
+#main .web .web3--list--item--text--btn a {
   width: 180px;
   height: 50px;
   background-color: #fff;
@@ -638,16 +644,16 @@ html, body {
   font-weight: 500;
   color: #333;
 }
-.main .mobile {
+#main .mobile {
   width: 100%;
   margin: 0 auto;
 }
-.main .mobile .mobile1 {
+#main .mobile .mobile1 {
   background: url(../img/진에어배경2.png) center center/cover no-repeat;
   background-color: #E2F3FF;
   margin: 0 auto;
 }
-.main .mobile .mobile1--item {
+#main .mobile .mobile1--item {
   width: 1280px;
   height: 900px;
   margin: 0 auto;
@@ -656,19 +662,19 @@ html, body {
   justify-content: space-between;
   position: relative;
 }
-.main .mobile .mobile1--item figure {
+#main .mobile .mobile1--item figure {
   height: 650px;
   padding-top: 30px;
 }
-.main .mobile .mobile1--item--text {
+#main .mobile .mobile1--item--text {
   padding-top: 50px;
   position: relative;
 }
-.main .mobile .mobile1--item--text--title {
+#main .mobile .mobile1--item--text--title {
   display: flex;
   align-items: center;
 }
-.main .mobile .mobile1--item--text--title::before {
+#main .mobile .mobile1--item--text--title::before {
   content: "";
   background-color: #DEEF0F;
   width: 50px;
@@ -678,32 +684,32 @@ html, body {
   top: 30px;
   left: -30px;
 }
-.main .mobile .mobile1--item--text--title h2 {
+#main .mobile .mobile1--item--text--title h2 {
   font-size: 40px;
   margin-right: 40px;
   font-weight: 600;
   z-index: 9;
 }
-.main .mobile .mobile1--item--text--title P {
+#main .mobile .mobile1--item--text--title P {
   font-size: 30px;
 }
-.main .mobile .mobile1--item--text--info {
+#main .mobile .mobile1--item--text--info {
   padding: 65px 0 40px;
 }
-.main .mobile .mobile1--item--text--info li {
+#main .mobile .mobile1--item--text--info li {
   font-size: 30px;
   display: flex;
   margin-bottom: 30px;
 }
-.main .mobile .mobile1--item--text--info li p {
+#main .mobile .mobile1--item--text--info li p {
   width: 120px;
   font-weight: 600;
   margin-right: 60px;
 }
-.main .mobile .mobile1--item--text--btn {
+#main .mobile .mobile1--item--text--btn {
   display: flex;
 }
-.main .mobile .mobile1--item--text--btn a {
+#main .mobile .mobile1--item--text--btn a {
   width: 180px;
   height: 50px;
   background-color: #fff;
@@ -716,10 +722,10 @@ html, body {
   font-size: 22px;
   font-weight: 500;
 }
-.main .mobile .mobile1--item--mobilemock {
+#main .mobile .mobile1--item--mobilemock {
   position: relative;
 }
-.main .mobile .mobile1--item--mobilemock--front {
+#main .mobile .mobile1--item--mobilemock--front {
   background: url(../img/진에어폰목업3.png) no-repeat;
   background-size: 500px, 580px;
   width: 500px;
@@ -731,7 +737,7 @@ html, body {
   overflow: hidden;
   z-index: 999;
 }
-.main .mobile .mobile1--item--mobilemock--front figure {
+#main .mobile .mobile1--item--mobilemock--front figure {
   width: 120px;
   height: 50px;
   z-index: 9999;
@@ -739,7 +745,7 @@ html, body {
   top: 0;
   left: 110px;
 }
-.main .mobile .mobile1--item--mobilemock--front span {
+#main .mobile .mobile1--item--mobilemock--front span {
   background: url(../img/진에어모바일.png) no-repeat;
   width: 256px;
   height: 550px;
@@ -748,7 +754,7 @@ html, body {
   left: 16px;
   border-radius: 30px;
 }
-.main .mobile .mobile1--item--mobilemock--front span:hover {
+#main .mobile .mobile1--item--mobilemock--front span:hover {
   animation: genie 12s infinite ease-in-out;
 }
 @keyframes genie {
@@ -762,12 +768,12 @@ html, body {
     background-position: 0 0;
   }
 }
-.main .mobile .mobile2 {
+#main .mobile .mobile2 {
   /* background: url(../img/진에어배경2.png) center center / cover no-repeat; */
   background-color: #EEEEEE;
   margin: 0 auto;
 }
-.main .mobile .mobile2--item {
+#main .mobile .mobile2--item {
   width: 1280px;
   height: 900px;
   margin: 0 auto;
@@ -776,19 +782,19 @@ html, body {
   justify-content: space-between;
   position: relative;
 }
-.main .mobile .mobile2--item figure {
+#main .mobile .mobile2--item figure {
   height: 650px;
   padding-top: 30px;
 }
-.main .mobile .mobile2--item--text {
+#main .mobile .mobile2--item--text {
   padding-top: 50px;
   position: relative;
 }
-.main .mobile .mobile2--item--text--title {
+#main .mobile .mobile2--item--text--title {
   display: flex;
   align-items: center;
 }
-.main .mobile .mobile2--item--text--title::before {
+#main .mobile .mobile2--item--text--title::before {
   content: "";
   background-color: #DEEF0F;
   width: 50px;
@@ -798,32 +804,32 @@ html, body {
   top: 30px;
   left: -30px;
 }
-.main .mobile .mobile2--item--text--title h2 {
+#main .mobile .mobile2--item--text--title h2 {
   font-size: 40px;
   margin-right: 40px;
   font-weight: 600;
   z-index: 9;
 }
-.main .mobile .mobile2--item--text--title P {
+#main .mobile .mobile2--item--text--title P {
   font-size: 30px;
 }
-.main .mobile .mobile2--item--text--info {
+#main .mobile .mobile2--item--text--info {
   padding: 65px 0 40px;
 }
-.main .mobile .mobile2--item--text--info li {
+#main .mobile .mobile2--item--text--info li {
   font-size: 30px;
   display: flex;
   margin-bottom: 30px;
 }
-.main .mobile .mobile2--item--text--info li p {
+#main .mobile .mobile2--item--text--info li p {
   width: 120px;
   font-weight: 600;
   margin-right: 60px;
 }
-.main .mobile .mobile2--item--text--btn {
+#main .mobile .mobile2--item--text--btn {
   display: flex;
 }
-.main .mobile .mobile2--item--text--btn a {
+#main .mobile .mobile2--item--text--btn a {
   width: 180px;
   height: 50px;
   background-color: #fff;
@@ -836,10 +842,10 @@ html, body {
   font-size: 22px;
   font-weight: 500;
 }
-.main .mobile .mobile2--item--mobilemock {
+#main .mobile .mobile2--item--mobilemock {
   position: relative;
 }
-.main .mobile .mobile2--item--mobilemock--front {
+#main .mobile .mobile2--item--mobilemock--front {
   background: url(../img/거북이상회목업3.png) no-repeat;
   background-size: 500px, 580px;
   width: 500px;
@@ -851,7 +857,7 @@ html, body {
   overflow: hidden;
   z-index: 999;
 }
-.main .mobile .mobile2--item--mobilemock--front figure {
+#main .mobile .mobile2--item--mobilemock--front figure {
   width: 120px;
   height: 50px;
   z-index: 9999;
@@ -859,7 +865,7 @@ html, body {
   top: 0;
   left: 110px;
 }
-.main .mobile .mobile2--item--mobilemock--front span {
+#main .mobile .mobile2--item--mobilemock--front span {
   background: url(../img/거북이상회.jpg) no-repeat;
   width: 256px;
   height: 550px;
@@ -868,7 +874,7 @@ html, body {
   left: 16px;
   border-radius: 30px;
 }
-.main .mobile .mobile2--item--mobilemock--front span:hover {
+#main .mobile .mobile2--item--mobilemock--front span:hover {
   animation: genie 12s infinite ease-in-out;
 }
 @keyframes genie {
@@ -882,33 +888,33 @@ html, body {
     background-position: 0 0;
   }
 }
-.main .graphic {
+#main .graphic {
   width: 100%;
   margin: 0 auto;
-  padding: 240px 0;
+  padding: 150px 0;
   /* background-color: #fff; */
 }
-.main .graphic .design {
+#main .graphic .design {
   width: 1920px;
 }
-.main .graphic .design--title {
+#main .graphic .design--title {
   width: 1280px;
   margin: 0 auto;
   color: #fff;
   display: flex;
   justify-content: space-between;
 }
-.main .graphic .design--title h1 {
+#main .graphic .design--title h1 {
   font-size: 40px;
-  padding-bottom: 100px;
+  padding-bottom: 120px;
 }
-.main .graphic .design--title p {
+#main .graphic .design--title p {
   font-size: 20px;
 }
-.main .graphic .design .swiper-wrapper {
+#main .graphic .design .swiper-wrapper {
   height: 530px;
 }
-.main .graphic .design .swiper-wrapper .swiper-slide {
+#main .graphic .design .swiper-wrapper .swiper-slide {
   /* max-height: 500px; */
   /* height: 20.83vw; */
   width: 550px;
@@ -916,73 +922,99 @@ html, body {
   color: #fff;
   text-align: center;
 }
-.main .graphic .design .swiper-wrapper .swiper-slide figure {
+#main .graphic .design .swiper-wrapper .swiper-slide figure {
   /* max-height: 350px;
   height: 18.22vw; */
   height: 360px;
 }
-.main .graphic .design .swiper-wrapper .swiper-slide figure img {
+#main .graphic .design .swiper-wrapper .swiper-slide figure img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.main .graphic .design .swiper-wrapper .swiper-slide h4 {
+#main .graphic .design .swiper-wrapper .swiper-slide h4 {
   font-size: 30px;
   padding: 20px 0;
 }
-.main .graphic .design .swiper-wrapper .swiper-slide p {
+#main .graphic .design .swiper-wrapper .swiper-slide p {
   font-size: 20px;
 }
-.main .graphic .design .swiper-wrapper .swiper-slide-next + .swiper-slide {
+#main .graphic .design .swiper-wrapper .swiper-slide-next + .swiper-slide {
   transform: scale(1.2);
   z-index: 9;
 }
-.main .thankU {
+#main .graphic .design .swiper-button-next {
+  right: 37%;
+  transform: translateY(-37%);
+  width: 50px;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.7411764706);
+  border-radius: 50px;
+}
+#main .graphic .design .swiper-button-next:after {
+  color: #2F4B92;
+  font-size: 30px;
+  font-weight: bold;
+}
+#main .graphic .design .swiper-button-prev {
+  left: 37%;
+  transform: translateY(-37%);
+  width: 50px;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.7411764706);
+  border-radius: 50px;
+}
+#main .graphic .design .swiper-button-prev:after {
+  color: #2F4B92;
+  font-size: 30px;
+  font-weight: bold;
+}
+#main .thankU {
   width: 100%;
   height: 900px;
   margin: 0 auto;
   padding: 240px 0;
 }
-.main .thankU .list {
+#main .thankU .list {
   width: 1280px;
   margin: 0 auto;
   text-align: center;
   color: #fff;
 }
-.main .thankU .list h1 {
+#main .thankU .list h1 {
   font-size: 100px;
   padding: 100px;
   font-family: "JalnanGothic";
   font-style: italic;
   text-align: center;
 }
-.main .thankU .list--call {
+#main .thankU .list--call {
   width: 500px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
 }
-.main .thankU .list--call--icon {
+#main .thankU .list--call--icon {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 0 50px 50px;
 }
-.main .thankU .list--call--icon figure {
+#main .thankU .list--call--icon figure {
   width: 30px;
   height: 30px;
 }
-.main .thankU .list--call--icon figure img {
+#main .thankU .list--call--icon figure img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.main .thankU .list--call--icon p {
+#main .thankU .list--call--icon p {
   padding-top: 10px;
 }
-.main .thankU .list h5 {
+#main .thankU .list h5 {
   line-height: 1.5;
   font-size: 14px;
   font-weight: lighter;

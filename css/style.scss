@@ -46,6 +46,12 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'SUIT-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
 
 *,
 ::before,
@@ -119,7 +125,7 @@ html,body {
 }
 
 /* ------🔥🔥 main 🔥🔥------ */
-.main {
+#main {
     width: 100%;    
     margin: 0 auto;
     background-color: #2F4B92;
@@ -901,7 +907,7 @@ html,body {
     .graphic {
         width: 100%;
         margin: 0 auto;
-        padding: 240px 0;
+        padding: 150px 0;
         /* background-color: #fff; */
         .design {
             width: 1920px;
@@ -913,7 +919,7 @@ html,body {
                 justify-content: space-between;
                 h1 {
                     font-size: 40px;
-                    padding-bottom: 100px;
+                    padding-bottom: 120px;
                 }
                 p {font-size: 20px;}
             }
@@ -925,7 +931,8 @@ html,body {
                     width: 550px;
                     margin: 0 auto;
                     color: #fff;
-                    text-align: center;                    
+                    text-align: center;   
+                                   
                     figure {
                         /* max-height: 350px;
                         height: 18.22vw; */
@@ -944,11 +951,40 @@ html,body {
                         font-size: 20px;
                     }
                 }
+                
                 .swiper-slide-next + .swiper-slide{
                     transform: scale(1.2);
                     z-index: 9;
                     
                 }
+            }
+            .swiper-button-next {                
+                right: 37%;
+                transform: translateY(-37%);
+                width: 50px;
+                height: 50px;
+                background-color: #ffffffbd;
+                border-radius: 50px;
+                
+            }
+            .swiper-button-next:after {               
+                color: #2F4B92;
+                font-size: 30px;
+                font-weight: bold
+            }
+            .swiper-button-prev {
+                left: 37%;
+                transform: translateY(-37%);
+                width: 50px;
+                height: 50px;
+                background-color: #ffffffbd;
+                border-radius: 50px;
+                
+            }
+            .swiper-button-prev:after {
+                color: #2F4B92;
+                font-size: 30px;
+                font-weight: bold;
             }
         }
     } /* .graphic end */

@@ -27,20 +27,20 @@
     <div id="wrap">
         <header class="header" id="header">
             <div class="inner">
-                <a href="#">
+                <a href="#main">
                     <img src="img/이름로고_흰색.png" alt="이름">
                 </a>
                 <nav>
                     <ul class="menu">
-                        <li><a href="#">Web</a></li>
-                        <li><a href="#">Mobile</a></li>
-                        <li><a href="#">Graphic Design</a></li>
+                        <li><a href="#web">Web</a></li>
+                        <li><a href="#mobile">Mobile</a></li>
+                        <li><a href="#graphic">Graphic Design</a></li>
                     </ul>
                 </nav>
             </div> <!-- .inner end -->
         </header> <!-- .header end -->
 
-        <main class="main">
+        <main id="main">
             <section class="title">
                 <div class="title--item">
                     <input type="text" placeholder="HYERI" /> <!-- password도 사용가능 -->
@@ -92,7 +92,7 @@
                 </div> <!-- .profile--info end -->
             </section> <!-- .profile end -->
 
-            <section class="web">
+            <section class="web" id="web">
                 <div class="web1--list">
                     <div class="web1--list--item">
                         <div class="web1--list--item--pcmock">
@@ -103,9 +103,9 @@
                         </div>
                         <div class="web1--list--item--mobilemock">
                             <figure>
-                               <img src="img/카메라.png" alt="">
+                                <img src="img/카메라.png" alt="">
                             </figure>
-                            <span></span>                    
+                            <span></span>
                         </div>
                         <div class="web1--list--item--text">
                             <div class="web1--list--item--text--title">
@@ -145,7 +145,7 @@
                             <figure>
                                 <img src="img/지니뮤직화면.png" alt="">
                             </figure>
-                        </div>                        
+                        </div>
                         <div class="web2--list--item--text">
                             <div class="web2--list--item--text--title">
                                 <h2>하림펫푸드</h2>
@@ -185,7 +185,7 @@
                                 <img src="img/지니뮤직화면.png" alt="">
                             </figure>
                         </div>
-                        
+
                         <div class="web3--list--item--text">
                             <div class="web1--list--item--text--title">
                                 <h2>독도전시관</h2>
@@ -218,7 +218,7 @@
                 </div><!-- .web1--list end -->
             </section><!-- .web end -->
 
-            <section class="mobile">
+            <section class="mobile" id="mobile">
                 <div class="mobile1">
                     <div class="mobile1--item">
                         <div class="mobile1--item--text">
@@ -246,17 +246,17 @@
                             </ul>
                             <div class="mobile1--item--text--btn">
                                 <a href="#">Prosess</a>
-                                <a href="#">웹사이트 보기</a>
+                                <a href="#">피그마보기</a>
                             </div>
-                        </div> <!-- .mobile1--list--item--text--btn end -->                         
-                        
-                        <div class="mobile1--item--mobilemock">                            
+                        </div> <!-- .mobile1--list--item--text--btn end -->
+
+                        <div class="mobile1--item--mobilemock">
                             <div class="mobile1--item--mobilemock--front">
                                 <figure>
                                     <img src="img/카메라2.png" alt="">
                                 </figure>
                                 <span></span>
-                            </div>                                                                     
+                            </div>
                         </div>
 
                     </div><!-- .mobile1--list--item end -->
@@ -290,27 +290,27 @@
                                 <!-- <a href="#">Prosess</a> -->
                                 <a href="#">피그마보기</a>
                             </div>
-                        </div> <!-- .mobile1--list--item--text--btn end -->                         
-                        
-                        <div class="mobile2--item--mobilemock">                            
+                        </div> <!-- .mobile1--list--item--text--btn end -->
+
+                        <div class="mobile2--item--mobilemock">
                             <div class="mobile2--item--mobilemock--front">
                                 <figure>
                                     <img src="img/카메라2.png" alt="">
                                 </figure>
                                 <span></span>
-                            </div>                                                                     
+                            </div>
                         </div>
 
                     </div><!-- .mobile2--list--item end -->
                 </div><!-- .mobile2--list end -->
-                
+
             </section><!-- .mobile end -->
 
-            <section class="graphic">
+            <section class="graphic" id="graphic">
                 <div class="swiper design">
                     <div class="design--title">
                         <h1>Graphic Design</h1>
-                        <p>더보기</p>
+                        <p><a href="#">더보기</a></p>
                     </div>
 
                     <div class="swiper-wrapper">
@@ -384,6 +384,9 @@
                             </a>
                         </div><!-- .swiper-slide end -->
                     </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    
                     <div class="swiper-pagination"></div>
                 </div><!-- .swiper design end -->
             </section><!-- .graphic end -->
@@ -409,7 +412,7 @@
                         © 2023 HYERI KIM. All Rights Reserved.
                     </h5>
                 </div> <!-- .thankU--list end -->
-            
+
             </section><!-- .thankU end -->
         </main> <!-- .main end -->
     </div><!-- .wrap end -->
