@@ -561,8 +561,8 @@ html,body {
                             top: 54px;
                             left: 26px;
                         &:hover {
-                            animation: harim 12s infinite ease-in-out;
-                            @keyframes harim {
+                            animation: dokdo 12s infinite ease-in-out;
+                            @keyframes dokdo {
                                 0% {
                                     background-position: 0 0;
                                 }
@@ -758,8 +758,8 @@ html,body {
                             left: 16px;
                             border-radius: 30px;
                         &:hover {
-                            animation: genie 12s infinite ease-in-out;
-                            @keyframes genie {
+                            animation: jinair 12s infinite ease-in-out;
+                            @keyframes jinair {
                                 0% {
                                     background-position: 0 0;
                                 }
@@ -882,8 +882,8 @@ html,body {
                             left: 16px;
                             border-radius: 30px;
                         &:hover {
-                            animation: genie 12s infinite ease-in-out;
-                            @keyframes genie {
+                            animation: turtle 12s infinite ease-in-out;
+                            @keyframes turtle {
                                 0% {
                                     background-position: 0 0;
                                 }

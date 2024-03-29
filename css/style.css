@@ -564,9 +564,9 @@ html, body {
   left: 26px;
 }
 #main .web .web3--list--item--mockup span:hover {
-  animation: harim 12s infinite ease-in-out;
+  animation: dokdo 12s infinite ease-in-out;
 }
-@keyframes harim {
+@keyframes dokdo {
   0% {
     background-position: 0 0;
   }
@@ -755,9 +755,9 @@ html, body {
   border-radius: 30px;
 }
 #main .mobile .mobile1--item--mobilemock--front span:hover {
-  animation: genie 12s infinite ease-in-out;
+  animation: jinair 12s infinite ease-in-out;
 }
-@keyframes genie {
+@keyframes jinair {
   0% {
     background-position: 0 0;
   }
@@ -875,9 +875,9 @@ html, body {
   border-radius: 30px;
 }
 #main .mobile .mobile2--item--mobilemock--front span:hover {
-  animation: genie 12s infinite ease-in-out;
+  animation: turtle 12s infinite ease-in-out;
 }
-@keyframes genie {
+@keyframes turtle {
   0% {
     background-position: 0 0;
   }
