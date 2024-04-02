@@ -98,7 +98,9 @@ html, body {
 .header {
   width: 100%;
   height: 80px;
-  background-color: rgba(47, 75, 146, 0.5137254902);
+  background-color: rgba(47, 75, 146, 0.7607843137);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
   position: fixed;
   top: 0;
   left: 0;
@@ -199,8 +201,8 @@ html, body {
   font-size: 25px;
 }
 #main .profile {
-  /*         max-width: 1280px;
-          width: calc(100% - 30px); */
+  /*  max-width: 1280px;
+      width: calc(100% - 30px); */
   width: 1280pox;
   height: 900px;
   /* max-height: 900px; */
