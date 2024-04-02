@@ -86,11 +86,18 @@ body {
   font-family: "Pretendard";
   line-height: 1;
   color: #333;
+  margin: 0 auto;
 }
 
 html, body {
   /* font-size: 62.5%; /* 10px */
   font-size: var(--basic-size);
+}
+
+#wrap {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #2F4B92;
 }
 
 .header {
@@ -125,4 +132,52 @@ html, body {
 }
 .header .inner .menu li {
   padding: 0 20px;
+}
+
+.main {
+  width: 100%;
+}
+.main .graphic {
+  width: 1280px;
+  padding: 100px 0;
+  margin: 0 auto;
+}
+.main .graphic .title {
+  font-size: 50px;
+  color: #fff;
+}
+.main .graphic--list--item01 {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0;
+}
+.main .graphic--list--item01--imglist {
+  padding: 10px 10px;
+}
+.main .graphic--list--item01--imglist img {
+  width: 350px;
+  height: 350px;
+}
+.main .sns {
+  width: 1280px;
+  padding: 100px 0;
+  margin: 0 auto;
+}
+.main .sns .title {
+  font-size: 50px;
+  color: #fff;
+}
+.main .sns--list--item01 {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0;
+}
+.main .sns--list--item01--imglist {
+  padding: 10px 10px;
+}
+.main .sns--list--item01--imglist img {
+  width: 350px;
+  height: 350px;
 }/*# sourceMappingURL=sub1.css.map */
