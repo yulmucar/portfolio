@@ -131,8 +131,9 @@ html,body {
     margin: 0 auto;
     background-color: #2F4B92;
     .title {
-        max-width: 1280px;
-        width: calc(100% - 30px);
+        width: 1280px;
+        /* max-width: 1280px;
+        width: calc(100% - 30px); */
         /* height: 100vh; */
         /* max-height: 900px; */
         height: 900px;
@@ -183,8 +184,9 @@ html,body {
         }
     }
     .profile {
-        max-width: 1280px;
-        width: calc(100% - 30px);
+/*         max-width: 1280px;
+        width: calc(100% - 30px); */
+        width: 1280pox;
         height: 900px;
         /* max-height: 900px; */
         margin: 240px auto 150px;
@@ -348,8 +350,8 @@ html,body {
                             left: 9px;
                             border-radius: 18px;
                         &:hover {
-                            animation: genie 12s infinite ease-in-out;
-                            @keyframes genie {
+                            animation: genieM 12s infinite ease-in-out;
+                            @keyframes genieM {
                                 0% {
                                     background-position: 0 0;
                                 }
@@ -388,7 +390,7 @@ html,body {
                                 z-index: 9;
                             }
                             P {
-                               font-size: 30px; 
+                               font-size: 30px;                                
                             }
                         }
         
@@ -402,6 +404,9 @@ html,body {
                                     width: 120px;
                                     font-weight: 600;
                                     margin-right: 60px;
+                                }
+                                span {
+                                    line-height: 1.3;
                                 }
                             }
                         }
@@ -448,8 +453,7 @@ html,body {
                             height: 320px;
                             position: absolute;
                             top: 55px;
-                            left: 26px;
-                            
+                            left: 26px;                            
                         &:hover {
                             animation: harim 12s infinite ease-in-out;
                             @keyframes harim {
@@ -501,8 +505,7 @@ html,body {
                             P {
                                font-size: 30px; 
                             }
-                        }
-        
+                        }        
                         &--info {             
                             padding: 65px 0 40px;
                             li {
@@ -513,6 +516,9 @@ html,body {
                                     width: 120px;
                                     font-weight: 600;
                                     margin-right: 60px;
+                                }
+                                span {
+                                    line-height: 1.3;
                                 }
                             }
                         }
@@ -533,11 +539,8 @@ html,body {
                                 
                             }
                         }
-                        
-        
                     }
                 }
-                
             }
         }
         .web3 {
@@ -625,6 +628,9 @@ html,body {
                                     font-weight: 500;
                                     margin-right: 60px;
                                 }
+                                span {
+                                    line-height: 1.3;
+                                }
                             }
                         }
                         &--btn {               
@@ -709,6 +715,9 @@ html,body {
                                 width: 120px;
                                 font-weight: 600;
                                 margin-right: 60px;
+                            }
+                            span {
+                                line-height: 1.3;
                             }
                         }
                     }
@@ -834,6 +843,9 @@ html,body {
                                 font-weight: 600;
                                 margin-right: 60px;
                             }
+                            span {
+                                line-height: 1.3;
+                            }
                         }
                     }
                     &--btn {               
@@ -932,8 +944,7 @@ html,body {
                     width: 550px;
                     margin: 0 auto;
                     color: #fff;
-                    text-align: center;   
-                                   
+                    text-align: center;                                      
                     figure {
                         /* max-height: 350px;
                         height: 18.22vw; */
@@ -953,10 +964,15 @@ html,body {
                     }
                 }
                 
-                .swiper-slide-next + .swiper-slide{
+                /* 슬라이드 넥스트의 바로 뒤꺼에 줄것이다! */
+                /* .swiper-slide-next + .swiper-slide{ 
                     transform: scale(1.2);
                     z-index: 9;
                     
+                } */
+                .swiper-slide-active {
+                    transform: scale(1.2);
+                    z-index: 9;
                 }
             }
             .swiper-button-next {                

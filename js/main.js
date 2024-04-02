@@ -11,6 +11,8 @@ $(function () {
   var swiper = new Swiper(".design", {
     slidesPerView: 5,
     spaceBetween: 30,
+    loop: true,
+    centeredSlides: true,
 
     navigation: {
       nextEl: ".swiper-button-next",
