@@ -996,6 +996,9 @@ html, body {
   font-size: 30px;
   font-weight: bold;
 }
+#main .graphic .design .swiper-pagination-bullet-active {
+  background-color: #fff;
+}
 #main .thankU {
   width: 100%;
   height: 900px;
