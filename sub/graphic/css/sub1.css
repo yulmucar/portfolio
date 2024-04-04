@@ -139,7 +139,7 @@ html, body {
 }
 .main .Banner {
   width: 1440px;
-  padding: 200px 0;
+  padding-top: 200px;
   margin: 0 auto;
 }
 .main .Banner .title {
@@ -163,9 +163,26 @@ html, body {
   -o-object-fit: cover;
      object-fit: cover;
 }
+.main .Banner--list--item02 {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0;
+}
+.main .Banner--list--item02--imglist {
+  padding: 10px 0;
+  width: 470px;
+  height: 200px;
+}
+.main .Banner--list--item02--imglist img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 .main .sns {
   width: 1440px;
-  padding-bottom: 200px;
+  padding-top: 200px;
   margin: 0 auto;
 }
 .main .sns .title {
@@ -191,7 +208,7 @@ html, body {
 }
 .main .detailpage {
   width: 1440px;
-  padding-bottom: 200px;
+  padding-top: 200px;
   margin: 0 auto;
 }
 .main .detailpage .title {
@@ -217,7 +234,7 @@ html, body {
 }
 .main .card_wrap {
   width: 1440px;
-  padding-bottom: 200px;
+  padding: 200px 0;
   margin: 0 auto;
 }
 .main .card_wrap .title {
