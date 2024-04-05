@@ -10,8 +10,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap" rel="stylesheet">
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style.scss">
+    
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
@@ -20,6 +22,7 @@
     <script src="lib/jquery-3.7.1.min.js"></script>
     <script src="js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 </head>
 
@@ -95,10 +98,11 @@
 
             <section class="web" id="web">
                 <div class="web1--list">
-                    <div class="web1--list--item">
-                        <div class="web1--list--item--pcmock">
+                    <div class="web1--list--item" data-aos="fade-up"
+                    data-aos-duration="1500">
+                        <div class="web1--list--item--pcmock"   >
                             <span></span>
-                            <figure>
+                            <figure >
                                 <img src="img/지니뮤직화면.png" alt="">
                             </figure>
                         </div>
@@ -140,7 +144,8 @@
                 </div><!-- .web1--list end -->
 
                 <div class="web2--list">
-                    <div class="web2--list--item">
+                    <div class="web2--list--item" data-aos="fade-up"
+                    data-aos-duration="2000">
                         <div class="web2--list--item--mockup">
                             <span></span>
                             <figure>
@@ -179,7 +184,8 @@
                 </div><!-- .web1--list end -->
 
                 <div class="web3--list">
-                    <div class="web3--list--item">
+                    <div class="web3--list--item" data-aos="fade-up"
+                    data-aos-duration="1500">
                         <div class="web3--list--item--mockup">
                             <span></span>
                             <figure>
@@ -221,7 +227,8 @@
 
             <section class="mobile" id="mobile">
                 <div class="mobile1">
-                    <div class="mobile1--item">
+                    <div class="mobile1--item" data-aos="fade-up"
+                    data-aos-duration="1500">
                         <div class="mobile1--item--text">
                             <div class="mobile1--item--text--title">
                                 <h2>진에어</h2>
@@ -263,7 +270,8 @@
                     </div><!-- .mobile1--list--item end -->
                 </div><!-- .mobile1--list end -->
                 <div class="mobile2">
-                    <div class="mobile2--item">
+                    <div class="mobile2--item" data-aos="fade-up"
+                        data-aos-duration="1500">
                         <div class="mobile2--item--text">
                             <div class="mobile2--item--text--title">
                                 <h2>거북이상회</h2>
@@ -308,7 +316,8 @@
             </section><!-- .mobile end -->
 
             <section class="graphic" id="graphic">
-                <div class="swiper design">
+                <div class="swiper design" data-aos="fade-up"
+                    data-aos-duration="1500">
                     <div class="design--title">
                         <h1>Graphic Design</h1>
                         <p><a href="sub/graphic/graphic.html" target="_blank">더보기</a></p>
@@ -407,7 +416,10 @@
             </section><!-- .thankU end -->
         </main> <!-- .main end -->
     </div><!-- .wrap end -->
-
+    
+    <script>
+        AOS.init();
+    </script>
 
 
 </body>
