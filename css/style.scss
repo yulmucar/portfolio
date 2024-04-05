@@ -47,15 +47,16 @@
     font-style: normal;
 }
 @font-face {
-    font-family: 'SUIT-Regular';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
     font-family: 'OAGothic-ExtraBold';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/OAGothic-ExtraBold.woff2') format('woff2');
     font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TTHakgyoansimMoheomgaB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2402_keris@1.0/TTHakgyoansimMoheomgaB.woff2') format('woff2');
+    font-weight: 700;
     font-style: normal;
 }
 
@@ -146,7 +147,37 @@ html,body {
         height: 1000px;
         margin: 0 auto;
         padding: 300px 0;
-        &--item {
+        &--item {            
+            /* span {
+                display: flex;
+                flex-direction: column;
+                color: #fff;
+                margin-bottom: 20px;
+            } */
+            .btn_right {
+                display: flex;
+                flex-direction: column;
+                color: #fff;
+                margin-bottom: 20px;
+                text-align: center;
+                font-family: 'TTHakgyoansimMoheomgaB';
+            }
+            .arrow_right {        
+                
+                animation: horizontal 0.7s ease-in-out infinite;
+            }
+            @keyframes horizontal {
+            0% {
+              margin-right: 9px;
+            }
+            50% {
+              margin-left: 11px;
+            }
+            100% {
+              margin-right: 9px;
+            }
+            }
+            flex-direction: column;
             position: relative;
             text-align: center;
             font-family: "Racing Sans One", sans-serif;
@@ -161,7 +192,7 @@ html,body {
             font-size: 9rem;
             text-align: center;
             color: #BDFF00;  
-            font-family: "Racing Sans One", sans-serif;   
+            /* font-family: "Racing Sans One", sans-serif;    */
             /* font-family: 'MBC1961GulimM';   */   
             font-family: 'OAGothic-ExtraBold';
             }
@@ -173,25 +204,26 @@ html,body {
                 right: 300px;
                 transform: translateY(-20%);
             }
+            input::placeholder {                
+                font-size: 10rem;
+                color: #BDFF00;
+                text-align: center;
+                font-family: "Racing Sans One", sans-serif;
+            }
+            input:focus {outline: 1px solid #BDFF00;}
+            h1 {
+                font-size: 9rem;
+                color: #fff;
+                padding: 10px 0 0;
+                text-align: center;
+            }
+            p {
+                color: #fff;
+                padding: 20px 0;
+                font-size: 25px;
+            }
         }
-        input::placeholder {                
-            font-size: 10rem;
-            color: #BDFF00;
-            text-align: center;
-            font-family: "Racing Sans One", sans-serif;
-        }
-        input:focus {outline: 1px solid #BDFF00;}
-        h1 {
-            font-size: 9rem;
-            color: #fff;
-            padding: 10px 0 0;
-            text-align: center;
-        }
-        p {
-            color: #fff;
-            padding: 20px 0;
-            font-size: 25px;
-        }
+        
     }
     .profile {
     /*  max-width: 1280px;
