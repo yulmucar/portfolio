@@ -5,7 +5,7 @@ $(function () {
     })
     
     //스와이퍼 슬라이드
-    var swiper = new Swiper(".mySwiper", {
+    /* var swiper = new Swiper(".mySwiper", {
         effect: "coverflow",
         grabCursor: true,
         centeredSlides: true,
@@ -22,6 +22,33 @@ $(function () {
         pagination: {
             el: ".swiper-pagination",
         },
-    });
+    }); */
+    
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 5,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+          },
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 50,
+          },
+        },
+      });
 
 })
