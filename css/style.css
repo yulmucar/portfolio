@@ -254,17 +254,18 @@ html, body {
   margin: 0 auto;
 }
 #main .profile--hr figure {
-  width: 315px;
+  /* width: 315px; */
+  width: 430px;
   height: 430px;
   border-radius: 50px;
   overflow: hidden;
   margin: 0 auto;
 }
 #main .profile--hr figure img {
-  width: 100%;
+  /* width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover; */
+  padding-left: 40px;
 }
 #main .profile--hr--text {
   width: 48%;
@@ -379,7 +380,7 @@ html, body {
   padding-top: 30px;
 }
 #main .web .web1--list--item--pcmock figure img {
-  width: 100%;
+  /* width: 100%; */
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -524,7 +525,7 @@ html, body {
   padding-top: 30px;
 }
 #main .web .web2--list--item--mockup figure img {
-  width: 100%;
+  /* width: 100%; */
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;

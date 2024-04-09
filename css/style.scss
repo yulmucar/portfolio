@@ -239,15 +239,17 @@ html,body {
             max-height: 643px;
             margin: 0 auto;
             figure {
-                width: 315px;
+                /* width: 315px; */
+                width: 430px;
                 height: 430px;
                 border-radius: 50px;
                 overflow: hidden;
                 margin: 0 auto;
                 img {
-                    width: 100%;
+                    /* width: 100%;
                     height: 100%;
-                    object-fit: cover;
+                    object-fit: cover; */
+                    padding-left: 40px;
                 }
             }
             &--text {
@@ -362,7 +364,7 @@ html,body {
                             height: 650px;
                             padding-top: 30px;
                             img {
-                                width: 100%;
+                                /* width: 100%; */
                                 height: 100%;
                                 object-fit: cover;
                             }
@@ -510,7 +512,7 @@ html,body {
                             height: 650px;
                             padding-top: 30px;
                             img {
-                                width: 100%;
+                                /* width: 100%; */
                                 height: 100%;
                                 object-fit: cover;
                             }
