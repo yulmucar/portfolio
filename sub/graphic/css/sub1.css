@@ -243,18 +243,18 @@ html, body {
 }
 .main .card_wrap .mySwiper {
   width: 100%;
+  height: 460px;
   padding: 50px 0;
   margin-bottom: 20px;
 }
 .main .card_wrap .mySwiper .swiper-slide {
-  width: 400px;
-  height: 400px;
+  width: 470px;
+  height: 470px;
 }
 .main .card_wrap .mySwiper .swiper-slide img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  /* object-fit: cover; */
 }
 .main .card_wrap .mySwiper .swiper-pagination-bullet-active {
   background-color: #fff;

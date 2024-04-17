@@ -46,7 +46,7 @@ $(function () {
           },
           1024: {
             slidesPerView: 3,
-            spaceBetween: 50,
+            spaceBetween: 20,
           },
         },
       });
